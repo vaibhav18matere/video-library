@@ -5,17 +5,21 @@ import { PlaylistModal } from "../index";
 function VideoCard({ video }) {
 	const [videoActions, setVideoActions] = useState(false);
 	const [modal, setModal] = useState(false);
+	const { Title, Poster, Plot,Year } = video;
 	return (
 		<>
 			<div
 				className="video__card"
 			>
-					<img
-						alt={video.title}
-						src={video.staticImg}
-						className="video__card-image"
-					/>
-
+				<img
+					alt={Title}
+					src={Poster}
+					className="video__card-image"
+				/>
+				<div>
+					<p>{Title}</p>
+					<p>{Plot}</p>
+				</div>
 				<div className="video__details__container">
 					<div className="video__description__container">
 						<p className="video__description">{video.title}</p>
@@ -28,7 +32,7 @@ function VideoCard({ video }) {
 							}}
 						></i>
 					</div>
-					<p className="video__views">{video.views} views</p>
+					<p className="video__views"> Year : {Year}</p>
 					{videoActions ? (
 						<div className="video_actions_container">
 							<div

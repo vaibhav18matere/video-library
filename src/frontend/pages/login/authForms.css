@@ -53,9 +53,6 @@ input[type="checkbox"] {
 	width: 100%;
 	color: var(--text-color);
 }
-.btn_login__guest {
-	width: 100%;
-}
 .btn-secondary {
 	background-color: var(--background-color);
 	border: none;
@@ -67,11 +64,6 @@ input[type="checkbox"] {
 	color: var(--text-color);
 	text-align: center;
 }
-.forgot__password {
-	text-decoration: none;
-	color: var(--text-color);
-}
-
 ::placeholder {
 	color: var(--background-color);
 }
