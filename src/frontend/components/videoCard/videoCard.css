@@ -31,7 +31,6 @@
 
 .video_actions_container {
 	position: absolute;
-	/* bottom: -6rem; */
 	right: 1rem;
 	background-color: var(--nav-color);
 	color: var(--text-color);

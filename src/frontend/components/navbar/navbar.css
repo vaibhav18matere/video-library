@@ -1,6 +1,6 @@
 .navigation__component {
 	background-color: var(--nav-color);
-	padding: var(--padding-px-l) 3rem;
+	padding: var(--padding-px-l);
 }
 .nav {
 	justify-content: space-between;

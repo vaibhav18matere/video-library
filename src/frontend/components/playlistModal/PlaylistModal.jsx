@@ -10,7 +10,7 @@ function PlaylistModal({ setModal, video }) {
     <div className="modal__container">
       <div className="playlist__modal">
         <div className="playlist__title_actions">
-          <h2 className="playlist__title">Save to...</h2>
+          <h2 className="playlist__title"> Save to ... </h2>
           <i
             className="fas fa-times close__modal"
             onClick={() => setModal(false)}
@@ -22,7 +22,7 @@ function PlaylistModal({ setModal, video }) {
             <>
               <input
                 type="text"
-                placeholder="Enter Playlist Name"
+                placeholder="enter playlist name"
                 className="playlist__input"
                 onChange={(e) =>
                   setAddPlaylist({ ...addPlaylist, title: e.target.value })
