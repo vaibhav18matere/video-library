@@ -29,7 +29,6 @@ function Home() {
           value={searchInput}
         />
       </div>
-
       <div className="home__container">
         <div className="videos__container">
           {videos.map((video, index) => (

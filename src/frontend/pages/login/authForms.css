@@ -38,6 +38,7 @@
 .input {
 	width: 100%;
 	border: 1px solid var(--text-color);
+	margin-top: 0.3rem;
 }
 .input__TandC {
 	flex-direction: row;
@@ -60,6 +61,7 @@ input[type="checkbox"] {
 	cursor: pointer;
 }
 .auth__Links {
+	margin-top: 1rem;
 	text-decoration: none;
 	color: var(--text-color);
 	text-align: center;

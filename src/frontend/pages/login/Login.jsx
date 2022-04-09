@@ -102,17 +102,14 @@ function Login() {
             <div className="input__box input__TandC">
               <div>
                 <input type="checkbox" id="remberMe" />
-                <label htmlFor="remberMe">Remember me</label>
+                <label htmlFor="remberMe"> Remember me</label>
               </div>
             </div>
-            <button
-              type="submit"
-              className="btn btn-primary form-btn"
-            >
+            <button type="submit" className="btn btn-primary form-btn">
               Login
             </button>
             <Link to="/signup" className="auth__Links">
-              New here 👉 Create New Account
+              Create New Account
             </Link>
           </form>
         </div>

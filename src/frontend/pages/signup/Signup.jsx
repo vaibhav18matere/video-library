@@ -94,14 +94,14 @@ function Signup() {
           <div className="input__box input__TandC">
             <div>
               <input type="checkbox" id="TandC" />
-              <label htmlFor="TandC">I accept all Terms and Conditions</label>
+              <label htmlFor="TandC"> I accept all Terms and Conditions</label>
             </div>
           </div>
           <button type="submit" className="btn btn-primary form-btn">
             Create New Account
           </button>
           <Link to="/login" className="auth__Links">
-            Already have an Account 👉
+            Already have an Account
           </Link>
         </form>
       </div>
