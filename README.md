@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-###Preview Link : https://fasal.vercel.app 
+### Preview Link of Project : [Click Here](https://fasal.vercel.app) 
 
 ## Run Locally
 
@@ -31,6 +31,7 @@ Start the server
 ```bash
   npm run start
 ```
+#### [Github Hosting link](fasal-vaibhav18matere.vercel.app) 
 
 ## Features Available.
 
@@ -44,12 +45,11 @@ Start the server
   - Login
   - Sigup
   - Show/Hide Password
+  - Redirect to login page when accesing private routes
 ---
 
 ## Tech Stack
 
 **Client:** React, React Context API , React Router v6 , Component Library CSS
 
-**Server:** Firebase
-
-####Github Hosting link : fasal-vaibhav18matere.vercel.app
+**Server:** Firebase Authentication
