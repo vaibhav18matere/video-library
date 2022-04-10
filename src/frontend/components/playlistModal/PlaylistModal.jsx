@@ -14,9 +14,7 @@ function PlaylistModal({ setModal, video }) {
       videoArray: [],
     };
     setPlaylist([...playlist, newPlaylist]);
-    // setModal(false);
     setPlaylistTitle("");
-    // setInputVisible(false);
   };
 
   const addVideoToPlaylist = (playListId) => {

@@ -6,7 +6,6 @@ import "./playlist.css";
 
 function Playlist() {
   const { playlist } = usePlaylistContext();
-  console.log(playlist);
 
   return (
     <div>

@@ -8,7 +8,6 @@ import {
   PlaylistFolder,
 } from "./frontend/pages";
 import { PageContainer } from "./frontend/components";
-// import { PrivateRoute } from "./frontend/protectedRoute/PrivateRoute";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/playlist" element={<Playlist />} />
-        <Route exact path="/" element={<PageContainer children={<Home />} />} />
+        <Route exact path="/" element={<PageContainer page={<Home />} />} />
         <Route path="/playlist/:playlistId" element={<PlaylistFolder />} />
       </Routes>
     </div>

@@ -5,7 +5,7 @@ import { usePlaylistContext } from "../../context";
 function PlaylistFolder() {
   const { playlistId } = useParams();
   const { playlist } = usePlaylistContext();
-  console.log(playlistId);
+
 
   const singlePlaylist = playlist.find((item) => item.id === playlistId);
 
