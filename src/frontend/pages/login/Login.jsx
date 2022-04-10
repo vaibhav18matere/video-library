@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./authForms.css";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { app } from "../../auth/firebase.js";
+// import { app } from "../../auth/firebase.js";
 function Login() {
   const [passwordVisibility, setPasswordVisibility] = useState("password");
   const [passwordVisibilityIcon, setPasswordVisibilityIcon] =

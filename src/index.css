@@ -29,8 +29,6 @@
 	--z-index-m: 2;
 	--z-index-xl: 4;
 	--z-index-xxl: 5;
-	/* Border Radius  */
-	--border-radius-s: 5px;
 }
 html {
 	background-color: var(--background-color);

@@ -8,7 +8,6 @@ function Navbar() {
   let navigate = useNavigate();
   useEffect(() => {
     let authToken = localStorage.getItem("Auth Token");
-    console.log(authToken);
     if (authToken) {
       setIsLoggedIn(true);
       navigate("/");
@@ -18,7 +17,7 @@ function Navbar() {
       setIsLoggedIn(false);
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
 
   const handleAuthButtonClick = () => {
     if (isLoggedIn) {
