@@ -36,7 +36,6 @@ function PlaylistModal({ setModal, video }) {
     setPlaylist([...newList, newPlaylist]);
   };
 
-  console.log(playlist);
   return (
     <div className="modal__container">
       <div className="playlist__modal">

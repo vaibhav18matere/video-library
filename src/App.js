@@ -1,6 +1,12 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Home, Login, Signup, Playlist } from "./frontend/pages";
+import {
+  Home,
+  Login,
+  Signup,
+  Playlist,
+  PlaylistFolder,
+} from "./frontend/pages";
 import { PageContainer } from "./frontend/components";
 // import { PrivateRoute } from "./frontend/protectedRoute/PrivateRoute";
 
@@ -12,15 +18,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/playlist" element={<Playlist />} />
         <Route exact path="/" element={<PageContainer children={<Home />} />} />
-
-        {/* <Route
-					path="/playlist/:playlistId"
-					element={
-						<PrivateRoute>
-							<PageContainer page={<PlaylistFolder />} />
-						</PrivateRoute>
-					}
-				/> */}
+        <Route path="/playlist/:playlistId" element={<PlaylistFolder />} />
       </Routes>
     </div>
   );

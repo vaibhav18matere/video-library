@@ -22,7 +22,6 @@ function VideoCard({ video }) {
               className="fas fa-ellipsis-v"
               onClick={(e) => {
                 e.stopPropagation();
-
                 setVideoActions(!videoActions);
               }}
             ></i>
