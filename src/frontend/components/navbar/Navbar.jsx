@@ -35,7 +35,7 @@ function Navbar() {
           <i className="fas fa-bars"> </i>
         </p>
         <Link className="nav__logo" to="/">
-          <p className="nav__logo-image">Fasal Video Library</p>
+          <p className="brand-name">Fasal Video Library</p>
         </Link>
 
         <ul className="nav__right">

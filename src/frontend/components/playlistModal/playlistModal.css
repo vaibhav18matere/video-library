@@ -7,9 +7,9 @@
 
 .playlist__modal {
 	background-color: var(--nav-color);
-	width: 30ch;
+	width: 40vh;
 	padding: var(--padding-rem-s);
-	transform: translate(-50%, -50%);
+	transform: translate(-1%, -44%);
 }
 .playlist__title_actions {
 	display: flex;

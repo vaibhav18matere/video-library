@@ -23,12 +23,12 @@ function PlaylistFolder() {
       ))}
     </div>
   ) : (
-    <h3 className="empty__page">
-      you have No videos in this Playlist
-      <Link className="link" to="/">
+    <div className="child">
+      <h3 className="empty__page">You have not created any playlist</h3>
+      <Link className="link btn btn-primary" to="/">
         Explore Videos
       </Link>
-    </h3>
+    </div>
   );
 }
 

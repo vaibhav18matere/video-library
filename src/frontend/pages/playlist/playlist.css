@@ -48,3 +48,17 @@
      align-items: center;
      padding: var(--padding-px-l);
 }
+
+.child{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 3rem;
+}
+.empty__page{
+    padding: 2rem;
+    letter-spacing: 2px;
+}

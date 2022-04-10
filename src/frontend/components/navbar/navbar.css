@@ -5,8 +5,9 @@
 .nav {
 	justify-content: space-between;
 }
- .nav__search {
+.nav__search {
 	border: 2px solid white;
+	border-radius: 8px;
 }
 .nav__search input {
 	background-color: var(--background-color);
@@ -19,6 +20,7 @@
 }
 .btn-main {
 	color: var(--text-color);
+	margin-right: 3rem;
 }
 
 .toggles {
@@ -29,9 +31,10 @@
 	font-size: 1rem;
 	color: var(--text-color);
 }
-.nav__logo-image {
+.brand-name {
 	color: var(--text-color);
 	text-decoration: none;
+	padding-left: 1rem;
 }
 @media screen and (max-width: 780px) {
 	.navigation__component {
