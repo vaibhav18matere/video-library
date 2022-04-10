@@ -2,11 +2,11 @@
 
 ---
 
+#### [Preview Link of Project](https://fasal.vercel.app) 
+
 ## Quick Start
 
-### Preview Link of Project : [Click Here](https://fasal.vercel.app) 
-
-## Run Locally
+### Run Locally
 
 Clone this project
 
