@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-Preview Link : 
+###Preview Link : https://fasal.vercel.app 
 
 ## Run Locally
 
