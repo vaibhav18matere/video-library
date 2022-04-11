@@ -5,7 +5,12 @@ import empty from "../../assets/empty.png";
 import "./playlist.css";
 
 function Playlist() {
-  const { playlist } = usePlaylistContext();
+  const { playlist, setPlaylist } = usePlaylistContext();
+
+  const deletePlaylist = (playlistId) => {
+    const newPlaylist = playlist.filter((item) => item.id !== playlistId);
+    setPlaylist(newPlaylist);
+  };
 
   return (
     <div>
@@ -28,9 +33,15 @@ function Playlist() {
                   />
                 )}
               </Link>
+
               <div className="playlist__description">
-                <h2 className="playlist__card__title">{playlist.Title}</h2>
-                <i className="fas fa-ellipsis-v"></i>
+                <h2 className="playlist__card__title">{item.title}</h2>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => deletePlaylist(item.id)}
+                >
+                  Delete Playlist
+                </button>
               </div>
             </div>
           ))}

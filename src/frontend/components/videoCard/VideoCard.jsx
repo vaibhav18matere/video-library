@@ -6,7 +6,7 @@ function VideoCard({ video }) {
   const [videoActions, setVideoActions] = useState(false);
   const [modal, setModal] = useState(false);
 
-  const { Title, Poster, Plot, Year } = video;
+  const { Title, Poster, Plot, Year, Type } = video;
   return (
     <>
       <div className="video__card">
@@ -26,7 +26,8 @@ function VideoCard({ video }) {
               }}
             ></i>
           </div>
-          <p className="video__views"> Year : {Year}</p>
+          <span className="video__views"> Year : {Year}</span>
+          <span className="video__views"> Type : {Type}</span>
           {videoActions ? (
             <div className="video_actions_container">
               <div

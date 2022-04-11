@@ -4,11 +4,19 @@ import { usePlaylistContext } from "../../context";
 
 function PlaylistFolder() {
   const { playlistId } = useParams();
-  const { playlist } = usePlaylistContext();
-
+  const { playlist, setPlaylist } = usePlaylistContext();
 
   const singlePlaylist = playlist.find((item) => item.id === playlistId);
 
+  const deleteVideoFromPlaylist = (playListId, videoID) => {
+    const newPlaylist = playlist.find((item) => item.id === playListId);
+    const deletedVideoList = newPlaylist.videoArray.filter(
+      (item) => item.imdbID !== videoID
+    );
+    newPlaylist.videoArray = deletedVideoList;
+    const newList = playlist.filter((item) => item.id !== playListId);
+    setPlaylist([...newList, newPlaylist]);
+  };
   return singlePlaylist && singlePlaylist.videoArray.length > 0 ? (
     <div className="playlist__container">
       {singlePlaylist.videoArray.map((item) => (
@@ -18,6 +26,12 @@ function PlaylistFolder() {
             <h2 className="playlist__card__title">{item.Title}</h2>
             <small>{item.Plot}</small>
             <p className="video__views"> Year : {item.Year}</p>
+            <button
+              className="btn btn-primary"
+              onClick={() => deleteVideoFromPlaylist(playlistId, item.imdbID)}
+            >
+              Delete Video
+            </button>
           </div>
         </div>
       ))}

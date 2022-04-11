@@ -3,17 +3,16 @@ import "./home.css";
 import axios from "axios";
 import { VideoCard } from "../../components";
 import { useDataContext } from "../../context";
-import { v4 as uuidv4 } from "uuid";
+
 function Home() {
   const [searchInput, setSearchInput] = useState("");
   const { videos, setVideos } = useDataContext();
   const fetchData = async () => {
-    const {
-      data: { Title, Plot, Poster, Year },
-    } = await axios.get(
-      `https://www.omdbapi.com/?t=${searchInput}&apikey=3dd1056c`
+    const { data } = await axios.get(
+      `https://www.omdbapi.com/?s=${searchInput}&apikey=3dd1056c`
     );
-    setVideos([{ id: uuidv4(), Title, Plot, Poster, Year }]);
+
+    setVideos(data.Search);
   };
   return (
     <div className="search-box">

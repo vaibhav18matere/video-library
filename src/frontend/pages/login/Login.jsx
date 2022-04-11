@@ -48,7 +48,6 @@ function Login() {
         );
       })
       .catch((error) => {
-        console.log(error.code);
         if (error.code === "auth/wrong-password") {
           console.error("Please check the Password");
         }

@@ -27,7 +27,7 @@ function PlaylistModal({ setModal, video }) {
   const deleteVideoFromPlaylist = (playListId, videoID) => {
     const newPlaylist = playlist.find((item) => item.id === playListId);
     const deletedVideoList = newPlaylist.videoArray.filter(
-      (item) => item.id !== videoID
+      (item) => item.imdbID !== videoID
     );
     newPlaylist.videoArray = deletedVideoList;
     const newList = playlist.filter((item) => item.id !== playListId);
@@ -47,16 +47,19 @@ function PlaylistModal({ setModal, video }) {
         <div className="playlist__list">
           {playlist.length !== 0
             ? playlist.map((singlePlaylist) => (
-                <li key={playlist._id}>
+                <li key={playlist.id}>
                   <input
                     type="checkbox"
                     checked={singlePlaylist.videoArray.some(
-                      (item) => item.id === video.id
+                      (item) => item.imdbID === video.imdbID
                     )}
                     onChange={(e) =>
                       e.target.checked
                         ? addVideoToPlaylist(singlePlaylist.id)
-                        : deleteVideoFromPlaylist(singlePlaylist.id, video.id)
+                        : deleteVideoFromPlaylist(
+                            singlePlaylist.id,
+                            video.imdbID
+                          )
                     }
                   />
                   <span>{singlePlaylist.title}</span>
