@@ -2,22 +2,22 @@
 
 ---
 
+#### [Preview Link of Project](https://fasal.vercel.app) 
+
 ## Quick Start
 
-Preview Link : 
-
-## Run Locally
+### Run Locally
 
 Clone this project
 
 ```bash
-  git clone https://github.com/vaibhav18matere/fasal-video-library.git
+  git clone https://github.com/vaibhav18matere/fasal.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd fasal-video-library
+  cd fasal
 ```
 
 Install dependencies
@@ -31,6 +31,7 @@ Start the server
 ```bash
   npm run start
 ```
+#### [Github Hosting link](fasal-vaibhav18matere.vercel.app) 
 
 ## Features Available.
 
@@ -44,10 +45,11 @@ Start the server
   - Login
   - Sigup
   - Show/Hide Password
+  - Redirect to login page when accesing private routes
 ---
 
 ## Tech Stack
 
 **Client:** React, React Context API , React Router v6 , Component Library CSS
 
-**Server:** Firebase
+**Server:** Firebase Authentication
