@@ -11,13 +11,13 @@
 Clone this project
 
 ```bash
-  git clone https://github.com/vaibhav18matere/fasal-video-library.git
+  git clone https://github.com/vaibhav18matere/fasal.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd fasal-video-library
+  cd fasal
 ```
 
 Install dependencies
