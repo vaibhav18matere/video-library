@@ -15,7 +15,7 @@ function Home() {
     setVideos(data.Search);
   };
   return (
-    <div className="search-box">
+    <>
       <div className="nav__search">
         <input
           className="input"
@@ -37,7 +37,7 @@ function Home() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

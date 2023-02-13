@@ -12,21 +12,32 @@
 	top: 5px;
 }
 .video__card-image {
-	height: 10rem;
+	height: 15rem;
 	width: 100%;
 }
-.video__details__container {
-	margin: 8px 1rem;
+
+.video_title{
+	margin-top: 0.2rem;
+	letter-spacing: 1px;
+	text-align: center;
 }
-.video__description__container {
-	display: flex;
-	justify-content: space-between;
+
+.more-action-icon{
+	float: right;
+	margin-right: 10px;
 }
 .video__description {
 	font-size: 1.1rem;
 }
 .video__views {
 	margin: 8px 4px;
+}
+
+.video_extra_info{
+	display: flex;
+	align-items: end;
+	justify-items: center;
+	justify-content: space-around;
 }
 
 .video_actions_container {
@@ -58,6 +69,11 @@
 }
 .delete__btn {
 	color: var(--warning-red-color);
+}
+
+.add_to_playlist{
+	background-color: var(--text-color);
+	color:black;
 }
 
 @media screen and (max-width: 480px) {

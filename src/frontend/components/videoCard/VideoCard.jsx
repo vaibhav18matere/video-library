@@ -6,28 +6,27 @@ function VideoCard({ video }) {
   const [videoActions, setVideoActions] = useState(false);
   const [modal, setModal] = useState(false);
 
-  const { Title, Poster, Plot, Year, Type } = video;
+  const { Title, Poster, Year, Type } = video;
+
   return (
     <>
       <div className="video__card">
-        <img alt={Title} src={Poster} className="video__card-image" />
+        <img className="video__card-image" alt={Title} src={Poster} />
+        <h4 className="video_title">{Title}</h4>
+        <span className="more-action-icon">
+          <i
+            className="fas fa-ellipsis-v"
+            onClick={(e) => {
+              e.stopPropagation();
+              setVideoActions(!videoActions);
+            }}
+          ></i>
+        </span>
         <div>
-          <h4>{Title}</h4>
-          <small>{Plot}</small>
-        </div>
-        <div className="video__details__container">
-          <div className="video__description__container">
-            <p className="video__description">{video.title}</p>
-            <i
-              className="fas fa-ellipsis-v"
-              onClick={(e) => {
-                e.stopPropagation();
-                setVideoActions(!videoActions);
-              }}
-            ></i>
+          <div className="video_extra_info">
+            <span className="video__views"> Type : {Type}</span>
+            <span className="video__views"> Release in : {Year}</span>
           </div>
-          <span className="video__views"> Year : {Year}</span>
-          <span className="video__views"> Type : {Type}</span>
           {videoActions ? (
             <div className="video_actions_container">
               <div
